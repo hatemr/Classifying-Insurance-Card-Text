@@ -35,12 +35,12 @@ The fraction of alphabetic features was the most predictive, while the length wa
 ## Take-2
 Next, I changed to multiclass classification to predict 1) group ID, 2) member ID, 3) none. I also added in an indicator variable for whether the word was a "keyword", such as "Member" or "Group". The results are shown below, broken down by simulated and real data:
 
-![results 2](results_2.png)
+![results 2](images/results_2.png)
 
-The results seem mostly good, with only few off-diagonals.
+The results seem mostly good, with only few off-diagonals. However, it performs worse on the _real_ data, which causes concern. This would have to be improved later, but for a proof-of-concept, performance isn't bad.
 
 Now, length becomes a very important feature:
-![feature importance 2](feature_importance_2.png)
+![feature importance 2](images/feature_importance_2.png)
 
 # Text-based features
 I engineered 10 text-based features to represent each word:
@@ -74,5 +74,5 @@ This simple algorithm correctly dientified 8 of 10 Member IDs and 7 of 10 Group 
 
 ![no keyword](images/no_keyword.png)
 
-# Future word
+# Future work
 This project gives a compelling proof-of-concept for automatic text entry. Indeed, some companies like Zocdoc have built models using CNNs to identify the group IDs when you scan the card on your phone. Another similar offering is Textract from Amazon, which scans an image and extracts key-value pairs. The approached used here, feature engineering and ML prediction, can serve as a good solution, especially if other commercial tools aren't flexible enough for this particular task. Further work should be done to engineer new features, refine the models, and deploy a model in production.
