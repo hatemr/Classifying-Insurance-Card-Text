@@ -1,6 +1,8 @@
 # Classifying-Insurance-Card-Text
 A machine learning project to identify names, Group IDs, and Member IDs from insurance cards.
 
+The code can be found in [insurance_card_text_classification.ipynb](insurance_card_text_classification.ipynb). Since `.ipynb` files often don't render in Github, I also made a `.md` version [here](insurance_card_text_classification.md).
+
 # Business Problem
 Patients scan their insurance card at the clinic, but the administrative assisstant still must manually enter insurance information into the computer. This manual data entry costs time for the clinic and lowers the patient experience. If we could automatically extract information from the scanned insurance card, we could avoid time and frsutrated from manual entry.
 
