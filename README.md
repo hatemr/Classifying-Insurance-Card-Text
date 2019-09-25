@@ -37,7 +37,7 @@ Next, I changed to multiclass classification to predict 1) group ID, 2) member I
 
 ![results 2](images/results_2.png)
 
-The results seem mostly good, with only few off-diagonals.
+The results seem mostly good, with only few off-diagonals. However, it performs worse on the _real_ data, which causes concern. This would have to be improved later, but for a proof-of-concept, performance isn't bad.
 
 Now, length becomes a very important feature:
 ![feature importance 2](images/feature_importance_2.png)
